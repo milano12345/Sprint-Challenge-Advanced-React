@@ -1,11 +1,15 @@
 import React from 'react';
-import PlayersData from './components/playersData'
-import './App.css';
+import useDarkMode from 'use-dark-mode'
+import PlayersData from './components/playersData';
+import Hero from './components/customhooks/Hero'
+import './App.scss';
 
 function App() {
+
   return (
-    <div className="App">
+    <div className='App'>
       <header className="App-header">
+        <Hero />
         <PlayersData />
       </header>
     </div>
