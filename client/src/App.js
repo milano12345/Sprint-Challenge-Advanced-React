@@ -1,7 +1,6 @@
 import React from 'react';
-import useDarkMode from 'use-dark-mode'
 import PlayersData from './components/playersData';
-import Hero from './components/customhooks/Hero'
+import DarkModeToggle from './components/customhooks/DarkModeToggle'
 import './App.scss';
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
   return (
     <div className='App'>
       <header className="App-header">
-        <Hero />
+        <DarkModeToggle />
         <PlayersData />
       </header>
     </div>
