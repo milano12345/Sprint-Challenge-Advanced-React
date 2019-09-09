@@ -1,14 +1,14 @@
-import React from 'react';
-import PlayersData from './components/playersData';
-import DarkModeToggle from './components/customhooks/DarkModeToggle'
-import './App.scss';
+import React from "react";
+import PlayersData from "./components/playersData";
+import useDarkMode from "./components/customhooks/useDarkMode";
+import Toggle from "./components/Toggle";
+import "./App.scss";
 
 function App() {
-
   return (
-    <div className='App'>
+    <div className="App">
       <header className="App-header">
-        <DarkModeToggle />
+        <Toggle />
         <PlayersData />
       </header>
     </div>
